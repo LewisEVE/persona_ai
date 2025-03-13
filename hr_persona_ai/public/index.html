@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI个性化报告引擎</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>AI个性化报告引擎</h2>
+
+    <label for="inputText">请输入聊天记录或文本内容：</label>
+    <textarea id="inputText" placeholder="请粘贴你的聊天记录或邮件内容..."></textarea>
+
+    <button onclick="analyzeText()">开始分析</button>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>分析中，请稍候...</p>
+    </div>
+
+    <div id="reportSection" class="hidden">
+      <hr>
+      <h3>分析报告</h3>
+
+      <div class="keywords">
+        <strong>五维人格指数：</strong>
+        <div id="keywordsList">加载中...</div>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="radarChart" width="300" height="300"></canvas>
+      </div>
+
+      <div class="summary">
+        <strong>综合评语：</strong>
+        <p id="summaryText">加载中...</p>
+      </div>
+
+      <div class="placeholder">
+        <p>📌 更多维度分析（沟通风格 / 情绪变化轨迹 / PDF导出）即将开放高级订阅版本，敬请期待。</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
