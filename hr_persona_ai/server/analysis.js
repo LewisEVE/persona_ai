@@ -4,7 +4,7 @@ import OpenAI from "openai";
 // DeepSeek API配置
 const openai = new OpenAI({
   baseURL: "https://api.deepseek.com",
-  apiKey: "sk-f5e71aaf280e49598b9dfbea2fa4568e", // 你自己的Key
+  apiKey: "<Deepseek_API_Key_Here>", // 你自己的Key; Your own Deepseek API Key Here
 });
 
 /**
